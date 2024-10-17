@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #aa4aaa;
+}
+header {
+    background-color: #501450;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.contact-info a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    background-color: #aa4aaa;
+    color: rgb(0, 0, 0);
+    padding: 100px 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.hero .cta-button {
+    background-color: #ff8ac4;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background-color: #000000;
+}
+
+.car-image {
+    max-width: 50%;
+    height: auto;
+}
+
+#inform{
+    background-color: #501450;
+    color: whitesmoke;
+    padding: 3rem;
+}
+
+.titulo{
+    color: whitesmoke;
+    margin: 10px;
+}
+
+#services {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    margin-top: 5rem;
+    background-color: #501450;
+
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.service-item {
+    background-color: pink;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.service-item span {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.stat-item h2 {
+    font-size: 40px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.stat-item p {
+    font-size: 18px;
+    margin: 0;
+    color: #ffffff;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

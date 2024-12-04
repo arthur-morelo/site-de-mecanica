@@ -4,21 +4,25 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #aa4aaa;
 }
 header {
+    top: 0;
+    position: sticky;
     background-color: #501450;
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    z-index: 1000;
-    top: 0;
+    border: 2px solid white;
 }
 
 header img {
@@ -31,7 +35,6 @@ nav {
     align-items: end;
     justify-content: space-evenly;
     gap: 15px;
-    margin: 10px;
 }
 
 nav a {
@@ -100,25 +103,9 @@ nav a {
     padding: 3rem;
 }
 
-#beneficios{
-    margin: 3rem;
-    background-color: #ff8ac4;
-    border-radius: 25px;
-    padding: 20px;
-}
-
-.benef{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-}
-
 .titulo{
     color: whitesmoke;
     margin: 10px;
-
 }
 
 #services {
@@ -137,21 +124,6 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-}
-
-.service-item {
-    background-color: pink;
-    color: #000000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-}
-
-.service-item span {
-    margin-right: 5px;
-    font-size: 20px;
 }
 
 .stats {
@@ -180,4 +152,92 @@ footer{
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 15px;
+    background-color: #aa4aaa;
+    height: 350px;
+    width: 300px;
+    border-radius: 15px;
+    color:white;
+    border: 2px solid white;
+}
+
+.card-body img{
+    height: 200px;
+    width: 280px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        order: 2; 
+    }
+
+    .car-image {
+        max-width: 100%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .hero .cta-button {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .service-item {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .stat-item h2 {
+        font-size: 24px;
+    }
+
+    .stat-item p {
+        font-size: 14px;
+    }
+
+    .contact-info {
+        display: none;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
 }

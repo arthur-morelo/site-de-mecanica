@@ -23,6 +23,8 @@ header {
     justify-content: space-between;
     align-items: center;
     border: 2px solid white;
+    z-index: 1;
+    width: 100%;
 }
 
 header img {
